@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harshitha Bakery | Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        🍰 <span>Harshitha</span> Bakery
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html">Location</a>
+    </nav>
+
+    <div class="menu-btn">☰</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="page-hero">
+
+    <div>
+
+        <p class="small-title">OUR SWEET WORLD</p>
+
+        <h1>Bakery Gallery 📸</h1>
+
+        <p>
+            A delicious collection of our cakes,
+            pastries, desserts and happy moments.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ROTATING QUOTE ================= -->
+
+<section class="quote-section">
+
+    <p id="rotatingQuote">
+        "Good food deserves to be photographed." 📸🍰
+    </p>
+
+</section>
+
+
+<!-- ================= FILTER BUTTONS ================= -->
+
+<section class="gallery-section">
+
+    <p class="section-title">
+        EXPLORE OUR COLLECTION
+    </p>
+
+    <h2>Sweet Moments ✨</h2>
+
+
+    <div class="gallery-filters">
+
+        <button
+            class="gallery-filter active"
+            data-filter="all">
+            All
+        </button>
+
+        <button
+            class="gallery-filter"
+            data-filter="cakes">
+            Cakes
+        </button>
+
+        <button
+            class="gallery-filter"
+            data-filter="pastries">
+            Pastries
+        </button>
+
+        <button
+            class="gallery-filter"
+            data-filter="desserts">
+            Desserts
+        </button>
+
+        <button
+            class="gallery-filter"
+            data-filter="bakery">
+            Bakery
+        </button>
+
+        <button
+            class="gallery-filter"
+            data-filter="moments">
+            Moments
+        </button>
+
+    </div>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <div class="gallery-grid">
+
+
+        <!-- 01 -->
+
+        <div class="gallery-item" data-category="cakes">
+
+            <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                alt="Chocolate cake">
+
+            <div class="gallery-overlay">
+                <h3>Chocolate Cake</h3>
+                <span>🍫 Cakes</span>
+            </div>
+
+        </div>
+
+
+        <!-- 02 -->
+
+        <div class="gallery-item" data-category="cakes">
+
+            <img
+                src="birthday cake.jpg"
+                alt="Birthday cake">
+
+            <div class="gallery-overlay">
+                <h3>Birthday Cake</h3>
+                <span>🎂 Cakes</span>
+            </div>
+
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="gallery-item" data-category="cakes">
+
+            <img
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=85"
+                alt="Cream cake">
+
+            <div class="gallery-overlay">
+                <h3>Fresh Cream Cake</h3>
+                <span>🍰 Cakes</span>
+            </div>
+
+        </div>
+
+
+        <!-- 04 -->
+
+        <div class="gallery-item" data-category="cakes">
+
+            <img
+                src="celebration cake.jpg"
+                alt="Wedding cake">
+
+            <div class="gallery-overlay">
+                <h3>Celebration Cake</h3>
+                <span>💍 Cakes</span>
+            </div>
+
+        </div>
+
+
+        <!-- 05 -->
+
+        <div class="gallery-item" data-category="cakes">
+
+            <img
+                src="vanilla.jpg"
+                alt="Cupcake cake">
+
+            <div class="gallery-overlay">
+                <h3>Vanilla Cake</h3>
+                <span>🍦 Cakes</span>
+            </div>
+
+        </div>
+
+
+        <!-- 06 -->
+
+        <div class="gallery-item" data-category="cakes">
+
+            <img
+                src="strawberry.jpg"
+                alt="Strawberry cake">
+
+            <div class="gallery-overlay">
+                <h3>Strawberry Cake</h3>
+                <span>🍓 Cakes</span>
+            </div>
+
+        </div>
+
+
+        <!-- 07 -->
+
+        <div class="gallery-item" data-category="pastries">
+
+            <img
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+                alt="Croissants">
+
+            <div class="gallery-overlay">
+                <h3>Fresh Croissants</h3>
+                <span>🥐 Pastries</span>
+            </div>
+
+        </div>
+
+
+        <!-- 08 -->
+
+        <div class="gallery-item" data-category="pastries">
+
+            <img
+                src="french pastries.jpg"
+                alt="Pastries">
+
+            <div class="gallery-overlay">
+                <h3>French Pastries</h3>
+                <span>🥐 Pastries</span>
+            </div>
+
+        </div>
+
+
+        <!-- 09 -->
+
+        <div class="gallery-item" data-category="pastries">
+
+            <img
+                src="fresh pastry.jpg"
+                alt="Bakery pastry">
+
+            <div class="gallery-overlay">
+                <h3>Fresh Pastry</h3>
+                <span>🥧 Pastries</span>
+            </div>
+
+        </div>
+
+
+        <!-- 10 -->
+
+        <div class="gallery-item" data-category="pastries">
+
+            <img
+                src="sweet pastry.jpg"
+                alt="Sweet pastry">
+
+            <div class="gallery-overlay">
+                <h3>Sweet Pastry</h3>
+                <span>🥧 Pastries</span>
+            </div>
+
+        </div>
+
+
+        <!-- 11 -->
+
+        <div class="gallery-item" data-category="desserts">
+
+            <img
+                src="glazed donot.jpg"
+                alt="Donuts">
+
+            <div class="gallery-overlay">
+                <h3>Glazed Donuts</h3>
+                <span>🍩 Desserts</span>
+            </div>
+
+        </div>
+
+
+        <!-- 12 -->
+
+        <div class="gallery-item" data-category="desserts">
+
+            <img
+                src="Colorful Macarons.jpg"
+                alt="Macarons">
+
+            <div class="gallery-overlay">
+                <h3>Colorful Macarons</h3>
+                <span>🍬 Desserts</span>
+            </div>
+
+        </div>
+
+
+        <!-- 13 -->
+
+        <div class="gallery-item" data-category="desserts">
+
+            <img
+                src="Berry Dessert.jpg"
+                alt="Dessert">
+
+            <div class="gallery-overlay">
+                <h3>Berry Dessert</h3>
+                <span>🍓 Desserts</span>
+            </div>
+
+        </div>
+
+
+        <!-- 14 -->
+
+        <div class="gallery-item" data-category="desserts">
+
+            <img
+                src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85"
+                alt="Ice cream dessert">
+
+            <div class="gallery-overlay">
+                <h3>Sweet Dessert</h3>
+                <span>🍨 Desserts</span>
+            </div>
+
+        </div>
+
+
+        <!-- 15 -->
+
+        <div class="gallery-item" data-category="bakery">
+
+            <img
+                src="white bread .jpg"
+                alt="Fresh bread">
+
+            <div class="gallery-overlay">
+                <h3>Fresh Bread</h3>
+                <span>🍞 Bakery</span>
+            </div>
+
+        </div>
+
+
+        <!-- 16 -->
+
+        <div class="gallery-item" data-category="bakery">
+
+            <img
+                src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=900&q=85"
+                alt="Bakery bread">
+
+            <div class="gallery-overlay">
+                <h3>Artisan Bread</h3>
+                <span>🍞 Bakery</span>
+            </div>
+
+        </div>
+
+
+        <!-- 17 -->
+
+        <div class="gallery-item" data-category="bakery">
+
+            <img
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=85"
+                alt="Cookies">
+
+            <div class="gallery-overlay">
+                <h3>Fresh Cookies</h3>
+                <span>🍪 Bakery</span>
+            </div>
+
+        </div>
+
+
+        <!-- 18 -->
+
+        <div class="gallery-item" data-category="bakery">
+
+            <img
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=85"
+                alt="Chocolate cookies">
+
+            <div class="gallery-overlay">
+                <h3>Chocolate Cookies</h3>
+                <span>🍪 Bakery</span>
+            </div>
+
+        </div>
+
+
+        <!-- 19 -->
+
+        <div class="gallery-item" data-category="moments">
+
+            <img
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+                alt="Bakery preparation">
+
+            <div class="gallery-overlay">
+                <h3>Made With Love</h3>
+                <span>❤️ Moments</span>
+            </div>
+
+        </div>
+
+
+        <!-- 20 -->
+
+        <div class="gallery-item" data-category="moments">
+
+            <img
+                src="Baker preparing food.jpg"
+                alt="Baker preparing food">
+
+            <div class="gallery-overlay">
+                <h3>Behind The Scenes</h3>
+                <span>👩‍🍳 Moments</span>
+            </div>
+
+        </div>
+
+
+        <!-- 21 -->
+
+        <div class="gallery-item" data-category="moments">
+
+            <img
+                src="Cake preparation.jpg"
+                alt="Cake preparation">
+
+            <div class="gallery-overlay">
+                <h3>Cake Creation</h3>
+                <span>🎂 Moments</span>
+            </div>
+
+        </div>
+
+
+        <!-- 22 -->
+
+        <div class="gallery-item" data-category="moments">
+
+            <img
+                src="happy moments.jpg"
+                alt="Bakery celebration">
+
+            <div class="gallery-overlay">
+                <h3>Happy Moments</h3>
+                <span>🎉 Moments</span>
+            </div>
+
+        </div>
+
+
+        <!-- 23 -->
+
+        <div class="gallery-item" data-category="desserts">
+
+            <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                alt="Special dessert">
+
+            <div class="gallery-overlay">
+                <h3>Special Creation</h3>
+                <span>✨ Desserts</span>
+            </div>
+
+        </div>
+
+
+        <!-- 24 -->
+
+        <div class="gallery-item" data-category="bakery">
+
+            <img
+                src="fresh donots.jpg"
+                alt="Fresh donuts">
+
+            <div class="gallery-overlay">
+                <h3>Fresh Donuts</h3>
+                <span>🍩 Bakery</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div class="gallery-lightbox" id="galleryLightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose">
+        ×
+    </button>
+
+    <button
+        class="lightbox-prev"
+        id="lightboxPrev">
+        ❮
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Gallery Preview">
+
+    <button
+        class="lightbox-next"
+        id="lightboxNext">
+        ❯
+    </button>
+
+    <div
+        class="lightbox-caption"
+        id="lightboxCaption">
+    </div>
+
+</div>
+
+
+<!-- ================= SOCIAL ================= -->
+
+<section class="gallery-social">
+
+    <p class="section-title">
+        SHARE THE SWEETNESS
+    </p>
+
+    <h2>Follow Harshitha Bakery 📱</h2>
+
+    <div class="gallery-social-links">
+
+        <a href="#">📷 Instagram</a>
+
+        <a href="#">f Facebook</a>
+
+        <a href="#">▶ YouTube</a>
+
+        <a href="#">💬 WhatsApp</a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FINAL QUOTE ================= -->
+
+<section class="quote-section">
+
+    <p>
+        "Life is better with a little sweetness." 🍰❤️
+    </p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        🍰 Harshitha Bakery
+    </div>
+
+    <p>
+        Freshly baked happiness, one bite at a time. ❤️
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html">Location</a>
+
+    </div>
+
+    <div class="footer-quote">
+        "Good things come to those who bake." 🧁
+    </div>
+
+    <p class="copyright">
+        © 2026 Harshitha Bakery. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

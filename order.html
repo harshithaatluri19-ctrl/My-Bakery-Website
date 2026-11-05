@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harshitha Bakery | Online Order</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        🍰 <span>Harshitha</span> Bakery
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html">Location</a>
+    </nav>
+
+    <div class="menu-btn">☰</div>
+
+</header>
+
+
+<!-- ================= PAGE BANNER ================= -->
+
+<section class="page-hero">
+
+    <div>
+
+        <p class="small-title">FRESHLY BAKED FOR YOU</p>
+
+        <h1>Place Your Order 🛒</h1>
+
+        <p>
+            Choose your favorite treats and let us
+            prepare something delicious for you.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ROTATING QUOTE ================= -->
+
+<section class="quote-section">
+
+    <p id="rotatingQuote">
+        "Sweetness is just one order away." 🧁
+    </p>
+
+</section>
+
+
+<!-- ================= ORDER AREA ================= -->
+
+<section class="order-section">
+
+    <div class="order-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="order-image">
+
+            <img
+            src="bakery.jpg"
+            alt="Fresh bakery">
+
+            <div class="order-image-text">
+
+                <h2>Freshly Baked ❤️</h2>
+
+                <p>
+                    Your happiness is our favorite ingredient.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="order-form-container">
+
+            <h2>Online Order</h2>
+
+            <p class="form-subtitle">
+                Fill in your details below
+            </p>
+
+
+            <form id="orderForm">
+
+                <!-- CUSTOMER NAME -->
+
+                <div class="form-group">
+
+                    <label for="customerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{10}"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PRODUCT -->
+
+                <div class="form-group">
+
+                    <label for="product">
+                        Select Your Treat
+                    </label>
+
+                    <select id="product" required>
+
+                        <option value="">
+                            -- Choose an item --
+                        </option>
+
+                        <optgroup label="Cakes">
+
+                            <option value="Chocolate Truffle Cake" data-price="650">
+                                Chocolate Truffle Cake - ₹650
+                            </option>
+
+                            <option value="Red Velvet Cake" data-price="700">
+                                Red Velvet Cake - ₹700
+                            </option>
+
+                            <option value="Black Forest Cake" data-price="650">
+                                Black Forest Cake - ₹650
+                            </option>
+
+                            <option value="Strawberry Cake" data-price="600">
+                                Strawberry Cake - ₹600
+                            </option>
+
+                            <option value="Butterscotch Cake" data-price="620">
+                                Butterscotch Cake - ₹620
+                            </option>
+
+                        </optgroup>
+
+
+                        <optgroup label="Pastries">
+
+                            <option value="Chocolate Pastry" data-price="90">
+                                Chocolate Pastry - ₹90
+                            </option>
+
+                            <option value="Strawberry Pastry" data-price="100">
+                                Strawberry Pastry - ₹100
+                            </option>
+
+                            <option value="Vanilla Pastry" data-price="80">
+                                Vanilla Pastry - ₹80
+                            </option>
+
+                            <option value="Red Velvet Pastry" data-price="120">
+                                Red Velvet Pastry - ₹120
+                            </option>
+
+                        </optgroup>
+
+
+                        <optgroup label="Donuts">
+
+                            <option value="Glazed Donut" data-price="60">
+                                Glazed Donut - ₹60
+                            </option>
+
+                            <option value="Chocolate Donut" data-price="70">
+                                Chocolate Donut - ₹70
+                            </option>
+
+                            <option value="Sprinkle Donut" data-price="75">
+                                Sprinkle Donut - ₹75
+                            </option>
+
+                            <option value="Strawberry Donut" data-price="80">
+                                Strawberry Donut - ₹80
+                            </option>
+
+                        </optgroup>
+
+
+                        <optgroup label="Cookies">
+
+                            <option value="Chocolate Chip Cookies" data-price="120">
+                                Chocolate Chip Cookies - ₹120
+                            </option>
+
+                            <option value="Butter Cookies" data-price="100">
+                                Butter Cookies - ₹100
+                            </option>
+
+                            <option value="Oatmeal Cookies" data-price="130">
+                                Oatmeal Cookies - ₹130
+                            </option>
+
+                        </optgroup>
+
+
+                        <optgroup label="Snacks">
+
+                            <option value="Veg Puff" data-price="35">
+                                Veg Puff - ₹35
+                            </option>
+
+                            <option value="Paneer Puff" data-price="50">
+                                Paneer Puff - ₹50
+                            </option>
+
+                            <option value="Chicken Puff" data-price="70">
+                                Chicken Puff - ₹70
+                            </option>
+
+                            <option value="Veg Sandwich" data-price="80">
+                                Veg Sandwich - ₹80
+                            </option>
+
+                        </optgroup>
+
+
+                        <optgroup label="Desserts">
+
+                            <option value="Chocolate Brownie" data-price="100">
+                                Chocolate Brownie - ₹100
+                            </option>
+
+                            <option value="Chocolate Sundae" data-price="150">
+                                Chocolate Sundae - ₹150
+                            </option>
+
+                            <option value="Chocolate Mousse" data-price="130">
+                                Chocolate Mousse - ₹130
+                            </option>
+
+                        </optgroup>
+
+
+                        <optgroup label="Beverages">
+
+                            <option value="Cappuccino" data-price="120">
+                                Cappuccino - ₹120
+                            </option>
+
+                            <option value="Cold Coffee" data-price="130">
+                                Cold Coffee - ₹130
+                            </option>
+
+                            <option value="Chocolate Milkshake" data-price="150">
+                                Chocolate Milkshake - ₹150
+                            </option>
+
+                        </optgroup>
+
+                    </select>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+
+                <div class="form-group">
+
+                    <label for="quantity">
+                        Quantity
+                    </label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        min="1"
+                        max="20"
+                        value="1"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DELIVERY -->
+
+                <div class="form-group">
+
+                    <label for="address">
+                        Delivery Address
+                    </label>
+
+                    <textarea
+                        id="address"
+                        rows="4"
+                        placeholder="Enter your delivery address"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- PAYMENT -->
+
+                <div class="form-group">
+
+                    <label for="payment">
+                        Payment Method
+                    </label>
+
+                    <select id="payment" required>
+
+                        <option value="">
+                            -- Select Payment --
+                        </option>
+
+                        <option value="Cash on Delivery">
+                            Cash on Delivery
+                        </option>
+
+                        <option value="UPI">
+                            UPI
+                        </option>
+
+                        <option value="Card">
+                            Credit / Debit Card
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div class="total-box">
+
+                    <span>Total Amount</span>
+
+                    <strong id="totalAmount">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="order-submit"
+                >
+                    Place Order 🍰
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= POPUP ================= -->
+
+<div
+    class="order-popup"
+    id="orderPopup"
+>
+
+    <div class="popup-box">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2>Order Confirmed! 🎉</h2>
+
+        <p id="popupMessage">
+            Thank you for ordering from Harshitha Bakery.
+        </p>
+
+        <p class="popup-small">
+            Your delicious treats are being prepared
+            with love. ❤️
+        </p>
+
+        <button
+            class="popup-close"
+            id="popupClose"
+        >
+            Continue 🍰
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= QUOTE ================= -->
+
+<section class="quote-section">
+
+    <p>
+        "There is always room for dessert." 🍰
+    </p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        🍰 Harshitha Bakery
+    </div>
+
+    <p>
+        Freshly baked happiness, one bite at a time. ❤️
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html">Location</a>
+
+    </div>
+
+    <div class="footer-quote">
+        "Good things come to those who bake." 🧁
+    </div>
+
+    <p class="copyright">
+        © 2026 Harshitha Bakery. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
